@@ -2,8 +2,8 @@
 title: XREAL Two of Us
 status: active
 period: 2025~
-role: Lead Developer (solo technical implementation)
-stack: [Unity 6, Meta Quest, GPT]
+role: Unity Client Developer
+stack: [Unity 6, Meta Quest]
 team:
   - 이동희 (Development)
   - 서진 조 (Planning)
@@ -19,16 +19,16 @@ Meta Quest standalone 플랫폼용 비대칭 협동(asymmetric co-op) 퍼즐 어
 
 ## 핵심 특징
 - **비대칭 협동 역할 디자인** — 두 플레이어가 서로 다른 정보/능력을 가지고 퍼즐을 함께 풉니다.
-- **자연어 상호작용** — GPT 통합으로 NPC/시스템과의 자연어 기반 인터랙션 구현.
+- **플레이어 대화 기반 관계·성향 분석** — 멀티플레이 중 두 플레이어의 음성 대화를 Clova STT로 텍스트화하고, GPT가 키워드 기반으로 두 사람의 관계와 성향을 분석. *(외부 파트 구현, 본인 담당 아님)*
 - **Quest standalone 최적화** — 저사양 기기에서도 쾌적한 협동 퍼즐 플레이가 가능한 렌더링·씬 구성.
 
-## 기술 도전
+## 기술 도전 (본인 담당)
 - Quest 3 기준 draw call 최적화 및 렌더링 파이프라인 튜닝
 - 비대칭 시점 간 게임플레이 상태 설계
-- 자연어 상호작용 응답성 확보
 
 ## 역할
-기술 구현 전반을 리드. 기획은 서진 조, 디자인은 다현 고와 협업.
+Unity 클라이언트 구현 전반(게임플레이·렌더링·UI). 기획은 서진 조, 디자인은 다현 고와 협업.
+음성 STT·GPT 분석 파트는 본인 담당 아님.
 
 ## 배포/전시 타깃
 - IEEE VR 2026 XR Gallery

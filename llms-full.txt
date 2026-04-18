@@ -39,7 +39,6 @@ Unity 기반 게임/XR 개발자. 협동 VR 게임, Unity WebGL PBV 설계 툴, 
 - **엔진/플랫폼**: Unity 6, Meta Quest (standalone), WebGL, Web (Vite + Tauri)
 - **언어**: C# (Unity), TypeScript (FolderEscape)
 - **UI**: Unity UI Toolkit (USS/UXML), uGUI + DOTween, HTML/CSS + GSAP
-- **AI 통합**: GPT
 - **툴체인**: Claude Code, MCP, Notion API, GitHub
 
 자세한 매트릭스는 [skills.md](/career/skills.md) 참고.
@@ -72,24 +71,43 @@ updated: 2026-04-19
 - ⭐⭐ 필요할 때 학습하며 사용
 - ⭐ 경험 있음
 
-## Engine & Platform
+## Unity Ecosystem
 | Tech | Level | Context |
 |---|---|---|
 | Unity 6 | ⭐⭐⭐⭐ | XREAL, PBV 실전 사용 |
+| URP | ⭐⭐⭐ | PBV (DecalProjector), XREAL |
+| Addressable | ⭐⭐⭐ | PBV 차량/부품 동적 로드 |
+
+## Platform
+| Tech | Level | Context |
+|---|---|---|
 | Meta Quest (standalone) | ⭐⭐⭐⭐ | XREAL 프로젝트 타깃 |
 | WebGL | ⭐⭐⭐ | PBV 프로젝트 |
 | Samsung Galaxy XR | ⭐⭐ | 성능 비교 리서치 중 |
+
+## Web / Desktop
+| Tech | Level | Context |
+|---|---|---|
+| Vite | ⭐⭐⭐ | FolderEscape 빌드 |
+| Tauri | ⭐⭐ | FolderEscape 데스크톱 런타임 |
+| Web Audio API | ⭐⭐ | FolderEscape 사운드 |
+
+## Language
+| Tech | Level | Context |
+|---|---|---|
+| C# | ⭐⭐⭐⭐ | Unity 메인 언어 |
+| TypeScript | ⭐⭐⭐ | FolderEscape 전체 구현 |
 
 ## UI
 | Tech | Level | Context |
 |---|---|---|
 | Unity UI Toolkit (USS/UXML) | ⭐⭐⭐⭐ | PBV 디자인 시스템 구축 |
 | uGUI + DOTween | ⭐⭐⭐ | 커스텀 드롭다운 등 |
+| HTML/CSS + GSAP | ⭐⭐⭐ | FolderEscape UI/연출 |
 
-## AI / Integration
+## AI Workflow
 | Tech | Level | Context |
 |---|---|---|
-| GPT API | ⭐⭐⭐ | 게임 내 자연어 상호작용 |
 | Claude Code | ⭐⭐⭐⭐ | 다중 에이전트 개발 워크플로우 |
 | MCP (Model Context Protocol) | ⭐⭐⭐ | Notion/Gmail 자동화 |
 
@@ -242,8 +260,8 @@ Unity WebGL 클라이언트 구현 전반. 아키모스 플랫폼 팀(OnMakers)�
 title: XREAL Two of Us
 status: active
 period: 2025~
-role: Lead Developer (solo technical implementation)
-stack: [Unity 6, Meta Quest, GPT]
+role: Unity Client Developer
+stack: [Unity 6, Meta Quest]
 team:
   - 이동희 (Development)
   - 서진 조 (Planning)
@@ -259,16 +277,16 @@ Meta Quest standalone 플랫폼용 비대칭 협동(asymmetric co-op) 퍼즐 어
 
 ## 핵심 특징
 - **비대칭 협동 역할 디자인** — 두 플레이어가 서로 다른 정보/능력을 가지고 퍼즐을 함께 풉니다.
-- **자연어 상호작용** — GPT 통합으로 NPC/시스템과의 자연어 기반 인터랙션 구현.
+- **플레이어 대화 기반 관계·성향 분석** — 멀티플레이 중 두 플레이어의 음성 대화를 Clova STT로 텍스트화하고, GPT가 키워드 기반으로 두 사람의 관계와 성향을 분석. *(외부 파트 구현, 본인 담당 아님)*
 - **Quest standalone 최적화** — 저사양 기기에서도 쾌적한 협동 퍼즐 플레이가 가능한 렌더링·씬 구성.
 
-## 기술 도전
+## 기술 도전 (본인 담당)
 - Quest 3 기준 draw call 최적화 및 렌더링 파이프라인 튜닝
 - 비대칭 시점 간 게임플레이 상태 설계
-- 자연어 상호작용 응답성 확보
 
 ## 역할
-기술 구현 전반을 리드. 기획은 서진 조, 디자인은 다현 고와 협업.
+Unity 클라이언트 구현 전반(게임플레이·렌더링·UI). 기획은 서진 조, 디자인은 다현 고와 협업.
+음성 STT·GPT 분석 파트는 본인 담당 아님.
 
 ## 배포/전시 타깃
 - IEEE VR 2026 XR Gallery

@@ -29,7 +29,6 @@ Unity 기반 게임/XR 개발자. 협동 VR 게임, Unity WebGL PBV 설계 툴, 
 - **엔진/플랫폼**: Unity 6, Meta Quest (standalone), WebGL, Web (Vite + Tauri)
 - **언어**: C# (Unity), TypeScript (FolderEscape)
 - **UI**: Unity UI Toolkit (USS/UXML), uGUI + DOTween, HTML/CSS + GSAP
-- **AI 통합**: GPT
 - **툴체인**: Claude Code, MCP, Notion API, GitHub
 
 자세한 매트릭스는 [skills.md](/career/skills.md) 참고.
