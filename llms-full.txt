@@ -65,58 +65,52 @@ updated: 2026-04-19
 
 # Skills Matrix
 
-숙련도 기준:
+숙련도 기준
+
 - ⭐⭐⭐⭐ 주도적으로 설계/문제 해결 가능
 - ⭐⭐⭐ 실전 프로젝트에서 자유롭게 사용
 - ⭐⭐ 필요할 때 학습하며 사용
 - ⭐ 경험 있음
 
 ## Unity Ecosystem
-| Tech | Level | Context |
-|---|---|---|
-| Unity 6 | ⭐⭐⭐⭐ | XREAL, PBV 실전 사용 |
-| URP | ⭐⭐⭐ | PBV (DecalProjector), XREAL |
-| Addressable | ⭐⭐⭐ | PBV 차량/부품 동적 로드 |
+
+- **Unity 6** — ⭐⭐⭐⭐ · XREAL, PBV 실전 사용
+- **URP** — ⭐⭐⭐ · PBV의 DecalProjector, XREAL의 Quest 타깃 렌더링
+- **Addressable** — ⭐⭐⭐ · PBV 차량/부품 동적 로드
 
 ## Platform
-| Tech | Level | Context |
-|---|---|---|
-| Meta Quest (standalone) | ⭐⭐⭐⭐ | XREAL 프로젝트 타깃 |
-| WebGL | ⭐⭐⭐ | PBV 프로젝트 |
-| Samsung Galaxy XR | ⭐⭐ | 성능 비교 리서치 중 |
 
-## Web / Desktop
-| Tech | Level | Context |
-|---|---|---|
-| Vite | ⭐⭐⭐ | FolderEscape 빌드 |
-| Tauri | ⭐⭐ | FolderEscape 데스크톱 런타임 |
-| Web Audio API | ⭐⭐ | FolderEscape 사운드 |
+- **Meta Quest (standalone)** — ⭐⭐⭐⭐ · XREAL Two of Us 타깃
+- **WebGL** — ⭐⭐⭐ · PBV 스마트 설계 시스템 배포 대상
+- **Samsung Galaxy XR** — ⭐⭐ · 성능 비교 리서치 중
+
+## Web · Desktop
+
+- **Vite** — ⭐⭐⭐ · FolderEscape 빌드 파이프라인
+- **Tauri** — ⭐⭐ · FolderEscape 데스크톱 런타임
+- **Web Audio API** — ⭐⭐ · FolderEscape 액션별 사운드
 
 ## Language
-| Tech | Level | Context |
-|---|---|---|
-| C# | ⭐⭐⭐⭐ | Unity 메인 언어 |
-| TypeScript | ⭐⭐⭐ | FolderEscape 전체 구현 |
+
+- **C#** — ⭐⭐⭐⭐ · Unity 메인 언어
+- **TypeScript** — ⭐⭐⭐ · FolderEscape 전체 구현
 
 ## UI
-| Tech | Level | Context |
-|---|---|---|
-| Unity UI Toolkit (USS/UXML) | ⭐⭐⭐⭐ | PBV 디자인 시스템 구축 |
-| uGUI + DOTween | ⭐⭐⭐ | 커스텀 드롭다운 등 |
-| HTML/CSS + GSAP | ⭐⭐⭐ | FolderEscape UI/연출 |
+
+- **Unity UI Toolkit (USS/UXML)** — ⭐⭐⭐⭐ · PBV 런타임 Hierarchy 뷰 + 커스텀 Inspector 구현
+- **uGUI + DOTween** — ⭐⭐⭐ · 커스텀 드롭다운 등
+- **HTML/CSS + GSAP** — ⭐⭐⭐ · FolderEscape UI/연출
 
 ## AI Workflow
-| Tech | Level | Context |
-|---|---|---|
-| Claude Code | ⭐⭐⭐⭐ | 다중 에이전트 개발 워크플로우 |
-| MCP (Model Context Protocol) | ⭐⭐⭐ | Notion/Gmail 자동화 |
+
+- **Claude Code** — ⭐⭐⭐⭐ · 다중 에이전트 개발 워크플로우
+- **MCP (Model Context Protocol)** — ⭐⭐⭐ · Notion/Gmail 자동화 파이프라인
 
 ## Tooling
-| Tech | Level | Context |
-|---|---|---|
-| Git / GitHub | ⭐⭐⭐⭐ | |
-| VSCode | ⭐⭐⭐⭐ | 메인 에디터 |
-| Notion API | ⭐⭐⭐ | 자동화 파이프라인 |
+
+- **Git / GitHub** — ⭐⭐⭐⭐
+- **VSCode** — ⭐⭐⭐⭐ · 메인 에디터 (Claude Code Extension)
+- **Notion API** — ⭐⭐⭐ · 개인 위키·자동화 연동
 
 
 ---
@@ -232,18 +226,20 @@ milestones:
 ## 핵심 특징
 - **데이터-주도 스폰** — `dynamic_properties.json`에 모든 차량·부품의 물리 속성, 배치 제약(Dot/Line/Plane), 스폰 후 자동 동작(카메라 이동, 자식 숨김, 도어 개방 등)을 정의. Addressable 레이블로 동적 로드.
 - **JS ↔ Unity 양방향 연동** — 아키모스 웹에서 JSON 명령 전송, Unity에서 분석 결과·이벤트·측정값을 JS 콜백으로 회신. 모든 기능이 웹에서 제어 가능.
+- **런타임 Hierarchy + 커스텀 Inspector** — UI Toolkit으로 씬 계층구조 뷰와 속성 편집창을 직접 구현. 선택·포커스는 씬과 양방향 동기화.
 - **커맨드 패턴 Undo/Redo** — 스폰·삭제, 색상/텍스처, 기즈모 변환, 데칼, 환경 변경, 체적 계산까지 모두 커맨드 단위로 기록되어 Ctrl+Z/Ctrl+Y로 복원.
 - **설계 검증 분석** — 메시 기반 충돌 분석(빨간 박스 시각화), 두 점 거리 측정, 체적/무게중심/관성 모멘트 계산, 총 무게 측정.
 
 ## 기술 도전
-- 아키모스(OnMakers) 플랫폼과의 JSON 명령 프로토콜 설계·버전 관리, JS↔Unity 비동기 통신의 타이밍·에러 처리
-- `dynamic_properties.json` 스키마 설계 — 차량/부품마다 물리 속성, 배치 제약(Dot/Line/Plane), 스폰 후 자동 동작(카메라 이동, 자식 숨김, 도어 개방 등)을 데이터로 기술하고, 스키마 변경이 런타임 동작에 일으키는 파급 최소화
+- 아키모스(OnMakers) 플랫폼과의 JS↔Unity 양방향 JSON 통신 (비동기 타이밍·에러 처리 포함)
+- `dynamic_properties.json` 스키마 설계 — 차량/부품마다 물리 속성, 배치 제약(Dot/Line/Plane), 스폰 후 자동 동작(카메라 이동, 자식 숨김, 도어 개방 등)을 데이터로 기술
+- UI Toolkit으로 런타임 계층구조(Hierarchy) 뷰와 커스텀 속성창(Inspector) 구현
 - Unity WebGL과 브라우저 이벤트 루프 사이의 입력 경계 처리
-- 대규모 부품 카탈로그(차량 5종 × 부품 40+종)의 Addressable 로드 성능
+- 대규모 부품 카탈로그(차량 5종 × 부품 40+종)의 Addressable 로드
 - URP DecalProjector 기반 곡면 데칼의 정확한 투영과 배치 UX
 
 ## 역할
-Unity WebGL 클라이언트 구현 전반. 아키모스 플랫폼 팀(OnMakers)과 JSON 프로토콜·연동 인터페이스를 협의해 구현.
+Unity WebGL 클라이언트 구현 전반. 아키모스 플랫폼 팀(OnMakers)과 연동 인터페이스를 협의해 구현.
 
 ## 배포 타깃
 - 아키모스 플랫폼 내 스마트 설계 시스템 모듈로 서비스
@@ -261,13 +257,9 @@ title: XREAL Two of Us
 status: active
 period: 2025~
 role: Unity Client Developer
-stack: [Unity 6, Meta Quest]
+stack: [Unity 6, C#, Meta Quest, XR Interaction Toolkit, OpenXR, Photon Fusion 2, AutoHand]
 team:
   - 이동희 (Development)
-  - 서진 조 (Planning)
-  - 다현 고 (Design)
-links:
-  - org: https://github.com/XREAL-Two-Of-Us
 milestones:
   - IEEE VR 2026 XR Gallery 전시 완료
   - 전시 QA 기반 디벨롭 + 후반부 스테이지 개발 + 출시 준비
@@ -357,47 +349,142 @@ Evaluator는 직접 플레이 테스트하지 않음. 빌드 오류와 스크립
 ---
 
 
-<!-- FILE: knowledge/unity-webgl-ui-toolkit.md -->
+<!-- FILE: knowledge/folder-escape-service-layer.md -->
 
 ---
-title: Unity WebGL + UI Toolkit Patterns
-tags: [unity, webgl, ui-toolkit, pbv]
+title: "FolderEscape를 혼자 만들면서 정리해둔 규칙"
+tags: [typescript, vite, tauri, folderescape]
 updated: 2026-04-19
 maturity: draft
 ---
 
-# Unity WebGL 환경의 UI Toolkit 활용 패턴
+# FolderEscape를 혼자 만들면서 정리해둔 규칙
 
-> PBV 프로젝트에서 정립한 실전 패턴. 자세한 구현 예시는 아직 정리 중.
+> FolderEscape(TypeScript + Vite + Tauri, OS 해킹 퍼즐 게임)를 혼자 만들면서 `CLAUDE.md`에 정리해둔 규칙들. 지키려고 노력하는 것들을 적어둔 정도.
 
-## 기본 원칙
-- **Spacer 기반 간격 관리** — margin 대신 명시적 Spacer 엘리먼트. WebGL 환경의 렌더링 일관성을 위해.
-- **Pretendard / NotoSansKR** 고정 — 한국어 UI 품질 확보.
-- **WebGL 안전 입력 처리** — 브라우저 이벤트 루프와 Unity 입력 시스템의 경계에서 발생하는 이슈 회피.
+## 핵심 규칙
 
-## 디자인 토큰 구조
-- **계층**: `tokens.base.uss`(원시 색·간격·반경) → `tokens.semantic.uss`(의미 토큰: surface, border, accent 등) → 컴포넌트별 USS.
-- **원시 값 직접 참조 금지** — 컴포넌트는 semantic 토큰만 바라보게 해서 테마 교체가 한 파일 수정으로 끝나도록 유지.
-- **Spacer 스케일**은 토큰으로 고정(예: xxs/xs/sm/md/lg/xl). 인라인 수치 금지.
+- **파일탐색기 UI 통일성** — 거의 모든 스테이지가 파일탐색기 안에서 벌어져서, 기존 탐색기 UI 패턴을 재사용하는 걸 기본으로 삼는다. 새 UI가 필요하면 먼저 상의.
+- **플랜 → 승인 → 코딩** — 뭘 만들지, 어떤 파일을 건드릴지 먼저 얘기하고 승인받은 뒤에 코드를 쓰려고 한다. Claude Code와 함께 일할 때도 같은 순서로.
+- **서비스 레이어** — 공용 기능은 `src/services/`에 두는 편이다. 스테이지 핸들러에는 그 스테이지 고유 로직만 두려고 한다.
+- **사운드** — 효과·연출·액션에는 가능한 한 사운드를 붙여두려고 한다.
+- **토큰 절약** — 라우팅 테이블로 필요한 문서만 참조하고, `Explorer.ts` 같이 큰 파일을 통째로 읽지 않으려고 한다.
+- **검증 범위** — 플레이 테스트는 직접 한다. 에이전트는 빌드와 스크립트 오류(타입/런타임) 쪽 확인까지만 맡긴다.
 
-## UXML 구성 패턴
-- **Template 재사용** — 반복되는 카드·패널·리스트 아이템은 `.uxml` 템플릿으로 분리하고 런타임에서 `TemplateContainer`로 clone.
-- **상태는 클래스로** — `is-selected`, `is-disabled`, `is-loading` 등 상태 클래스를 USS에서 처리. 코드에서 스타일 직접 설정 금지.
-- **Query 캐싱** — `rootVisualElement.Q<>()`는 초기 1회만 호출해 필드에 저장. 매 프레임 쿼리 금지.
+## 왜 이렇게 나눴나
 
-## 주요 컴포넌트 유형
-- **패널/모달** — 제목·콘텐츠·푸터 슬롯을 UXML 템플릿화.
-- **리스트/드롭다운** — UI Toolkit `ListView` 기반 가상화 리스트 + 커스텀 아이템 템플릿.
-- **파라미터 인스펙터** — 숫자/토글/슬라이더/컬러피커 조합. 데이터 바인딩은 `SerializedObject` 대신 경량 뷰모델로 직접 연결(WebGL 리플렉션 비용 회피).
-- **토스트/알림** — USS 트랜지션 + 타이머 기반 자동 해제.
+거의 모든 스테이지가 "파일탐색기 UI 안에서 뭔가를 한다"는 구조라, 스테이지별로 UI를 각자 만들면 통일성이 흐트러지기 쉽다. 반대로 한 곳에 전부 몰면 핸들러가 금방 커진다. 그래서 공용 기능은 서비스 쪽에 두고 스테이지는 자기 로직만 담당하도록 나눠봤다.
 
-## 커스텀 uGUI 드롭다운 (별도)
-UI Toolkit이 아닌 uGUI 쪽에서 필요했던 커스텀 드롭다운:
-- DOTween으로 애니메이션
-- 9-Slice 스프라이트로 반응형
-- 브라우저 포커스 전환 시의 입력 누락 방지 패턴
+## 라우팅 테이블
 
-<!-- 자세한 코드는 공개해도 될지 판단 후 업데이트 -->
+`CLAUDE.md`에 작업 종류별로 볼 문서를 매핑해뒀다.
+
+- 아키텍처 / 핵심 구조 → `.claude/index/architecture.md`
+- UI 규칙 / 코딩 컨벤션 → `.claude/index/conventions.md`
+- 스테이지 목록 / 개별 스테이지 → `.claude/index/stages-overview.md`
+- 스테이지 기본 구성 템플릿 → `.claude/specs/stage-template.md`
+- 서비스 레이어 상세 → `.claude/index/services.md`
+- 3-Agent 파이프라인 → `.claude/agents/`
+
+세션마다 필요한 문서만 참조하려는 목적. 루트 `CLAUDE.md`가 너무 커지지 않았으면 해서.
+
+## Claude Code와 일하는 흐름
+
+- **새 스테이지 추가** — Planner가 라우팅 테이블을 먼저 보고, stages-overview와 stage-template만 로드하는 식.
+- **UI 손볼 때** — conventions 문서를 추가로 참조. 통일성 쪽 규칙을 놓치면 Evaluator 단계에서 한 번 더 확인.
+- **공용 연출 추가** — services 문서를 먼저 보고, 없으면 서비스로 만들지 의논. 핸들러 안에 직접 넣지 않는 쪽으로.
+
+## 문서화를 해두는 이유
+
+혼자 작업하다 보니 결정 사항을 문서로 남겨두지 않으면 시간이 지나서 구조가 흐트러지기 쉬워서, 간단하게라도 적어두려고 한다.
+
+<!-- 스테이지별 스펙·서비스 내부 구조는 비공개 -->
+
+
+---
+
+
+<!-- FILE: knowledge/unity-webgl-ui-toolkit.md -->
+
+---
+title: "PBV 설계 툴을 만들면서 내가 짠 구조"
+tags: [unity, webgl, pbv, 아키모스, ui-toolkit]
+updated: 2026-04-19
+maturity: draft
+---
+
+# PBV 설계 툴을 만들면서 내가 짠 구조
+
+> Unity 클라이언트 개발자로 PBV 스마트 설계 시스템을 구현하면서 실제로 만든 부분 위주로 정리. 일반론 대신 프로젝트에서 있었던 일을 적어두려고 한다.
+
+## 이 프로젝트에서 내가 맡은 부분
+
+- 아키모스(OnMakers) 플랫폼과의 **JSON 양방향 통신**
+- `dynamic_properties.json` **스키마 설계**
+- UI Toolkit 기반 **런타임 계층구조(Hierarchy) 뷰**
+- UI Toolkit 기반 **커스텀 속성창(Inspector)**
+- **커스텀 uGUI 드롭다운** (UI Toolkit 밖)
+- **URP DecalProjector** 기반 곡면 데칼 UX
+- 대규모 부품 카탈로그의 **Addressable 로드**
+- 배치·편집 행동의 **Command 기반 Undo/Redo**
+
+## JS ↔ Unity 양방향 통신
+
+브라우저 안에 올라간 Unity WebGL 빌드가 아키모스 플랫폼과 데이터를 주고받는다.
+
+- **웹 → Unity**: `unityInstance.SendMessage`로 명령 전달.
+- **Unity → 웹**: jslib 콜백으로 상태 변화 송출.
+- 실제로 많이 부딪혔던 건 JS 이벤트 루프와 Unity 프레임 루프 사이의 타이밍 차. 입력·응답 경계에서 타임아웃·중복 호출·대기 상태를 케이스별로 처리했다.
+
+## `dynamic_properties.json` 스키마
+
+차량 5종 × 부품 40+종의 동작을 C# 코드에 하드코딩하지 않고 데이터로 서술했다. 한 부품 엔트리에 다음을 넣는다.
+
+- **물리 속성** — 질량·마찰 등 런타임이 바로 쓰는 값.
+- **배치 제약** — Dot/Line/Plane 중 어떤 기하에 붙는지.
+- **스폰 후 자동 동작** — 카메라 이동, 자식 오브젝트 숨김, 도어 개방 등 "스폰 직후 무조건 일어나야 하는" 행동.
+
+스키마가 바뀌면 런타임 동작이 조용히 변할 수 있어서, 엔트리 로더 쪽에서 누락·타입 불일치를 명시적으로 잡아내도록 해뒀다.
+
+## 런타임 계층구조(Hierarchy) 뷰 — UI Toolkit
+
+유니티 에디터의 Hierarchy 창과 비슷한 "런타임용" 계층구조 뷰를 UI Toolkit으로 만들었다.
+
+- 현재 씬에 배치된 차체·부품을 트리로 표시하고, 선택/포커스/폴드 상태를 공유.
+- 트리 노드 클릭 → 씬 선택, 씬 선택 → 트리 포커스가 양방향으로 동기화.
+- 자주 쓰는 동작(숨김/잠금/삭제)은 노드 우측 인라인 버튼으로.
+
+## 커스텀 속성창(Inspector) — UI Toolkit
+
+선택된 오브젝트의 속성을 편집하는 인스펙터를 UI Toolkit으로 따로 구현했다.
+
+- 속성 정의는 `dynamic_properties.json` 쪽 스키마를 따라가므로, 인스펙터 필드 구성이 데이터에서 결정된다.
+- 숫자·토글·슬라이더·드롭다운 등 필드 타입별 위젯을 조합해 한 오브젝트 = 하나의 인스펙터 패널로 조립.
+- 값 변경은 즉시 씬에 반영하되, 실제 커밋은 Command로 감싸 Undo/Redo 큐에 올린다.
+
+## 커스텀 uGUI 드롭다운
+
+UI Toolkit만으로 해결 안 된 케이스가 있어서 uGUI 쪽 드롭다운을 따로 만들었다.
+
+- 애니메이션: DOTween.
+- 반응형: 9-Slice 스프라이트.
+- 브라우저 포커스 전환 시 입력이 유실되는 문제가 있어서, focus/blur 경계에서 상태를 복구하는 로직을 넣었다.
+
+## URP DecalProjector로 곡면 데칼
+
+차체 곡면 위에 스티커·로고를 붙이는 UX. 직접 UV로 계산하면 곡면이 심한 위치에서 왜곡이 커져서 DecalProjector로 통일했다. 배치 UX 관점에선 "투영 방향"과 "프리뷰"가 매칭돼야 해서, 드래그 중인 데칼의 프리뷰 프로젝터와 확정 후 프로젝터가 같은 공간에서 동작하도록 맞췄다.
+
+## Addressable로 카탈로그 로드
+
+- 차량 5종 × 부품 40+종을 전부 씬에 올려두면 메모리와 로딩 시간이 모두 문제.
+- 카탈로그 진입 시 해당 그룹만 로드, 선택 해제 시 Release. `AsyncOperationHandle`을 보관해서 누락 없이 해제.
+- 자주 전환되는 뷰에선 LRU 크기를 작게 두고, 전환이 드문 뷰에서는 미리 로드.
+
+## Undo/Redo
+
+배치·속성 변경·삭제를 전부 Command 객체로 감싸서 스택으로 관리. 웹(아키모스) 쪽에서 트리거된 변경도 동일 큐에 실어서, Undo/Redo가 입력 출처에 상관없이 일관되게 동작하도록.
+
+<!-- 구체 코드·스키마 세부는 비공개 -->
 
 
 ---
@@ -406,47 +493,86 @@ UI Toolkit이 아닌 uGUI 쪽에서 필요했던 커스텀 드롭다운:
 <!-- FILE: knowledge/vr-performance-quest.md -->
 
 ---
-title: VR Performance on Meta Quest
-tags: [vr, quest, performance, unity]
+title: "XREAL Two of Us에서 내가 맡은 VR 개발"
+tags: [vr, quest, xreal, unity, photon-fusion, xr-interaction-toolkit]
 updated: 2026-04-19
 maturity: draft
 ---
 
-# Meta Quest 성능 최적화 노트
+# XREAL Two of Us에서 내가 맡은 VR 개발
 
-> XREAL 프로젝트 기준 실전 노하우. Quest 3 타깃.
+> Meta Quest 협동 VR 게임 "XREAL Two of Us"에서 Unity/C#/XR 구현 쪽을 맡고 있는 부분 위주로 정리해둔 노트. 프로젝트의 `CLAUDE.md`, `docs/`, 메모리에 실제로 박혀 있는 결정에서만 가져왔다.
 
-## 핵심 관심사
-- **Draw call 감축** — standalone VR의 절대 제약
-- **Fill rate vs. Geometry** — Quest 3 SoC 특성 고려
-- **Rendering path 선택** — Forward / Mobile 기준
+## 스택과 전체 구조
 
-## 크로스 플랫폼 리서치
-- Quest 3 vs. Samsung Galaxy XR 렌더링 특성 비교 (진행 중)
+- 엔진: Unity 6 (6000.x) / C#
+- XR: XR Interaction Toolkit + OpenXR → Meta Quest
+- VR 그랩: AutoHand
+- 네트워크: Photon Fusion 2 (`NetworkBehaviour`, `NetworkRunner`) — 팀 내 멀티플레이 담당자와 공유
+- 씬 흐름: LoadingScene → LobbyScene → MainScene(Stage 1~5) → ReportScene
+- 역할: Observer(1) / Explorer(2) — `GameConstants.PlayerRole`
 
-## GPU Instancing 활용 기준
-- **같은 메시 · 같은 머티리얼**이 N개 이상 반복되는 오브젝트에만 적용. 1~2개뿐이면 오히려 오버헤드.
-- **MaterialPropertyBlock**으로 색/파라미터 변주. 머티리얼 인스턴스 분기로 배치가 깨지지 않도록.
-- 동적으로 스폰되는 프롭은 **프리팹 단계에서 Enable GPU Instancing**을 켜두고, 코드에서 머티리얼을 교체하지 않음.
+## 내가 주로 맡은 범위
 
-## SRP Batcher 호환 셰이더 규칙
-- 모든 머티리얼은 **Shader Graph 또는 SRP Batcher 호환 HLSL**로 통일. Standard Surface Shader는 금지.
-- `UnityPerMaterial` CBuffer 레이아웃을 유지 — 프로퍼티 추가 시 전체 머티리얼 일괄 적용.
-- 커스텀 셰이더는 Frame Debugger로 SRP Batcher 그룹이 끊기지 않는지 확인 후 머지.
+- Unity/C#/XR 구현 전반
+- 시스템 간 통신을 묶는 **이벤트 버스 아키텍처**(`EventsManager`) 결정과 구현
+- **VR 인터랙션 시스템** — Magic Gun / VR Socket / Block Stepping
+- **NPC 대화 게이트** 기반 스테이지 진행
+- **VR 친화적 UI 패턴** — 로비 메뉴, 페이드 전환, VR 더블클릭 방지, Emotion UI, Flashlight UI, Explorer Marker 등
 
-## URP 경량화 설정
-- **MSAA 2~4x** 기본. 8x는 비용 대비 이득 없음.
-- **Post-processing 최소화** — Bloom/DoF는 씬 단위로 on/off. 풀타임 활성화 금지.
-- **Shadow**: Realtime shadow는 주요 동적 오브젝트에만. 나머지는 라이트맵 + 베이크.
-- **Renderer Features**는 필요한 씬에서만 활성화되도록 Renderer Asset 분리.
+팀 내 다른 영역은 따로 맡은 분들이 있다: 순수 멀티플레이 구현, LLM 분석, 애니메이션·연출, UI/프랍 디자인, 레벨 디자인.
 
-## 씬 로딩/해제 시 메모리 관리
-- 씬 전환 직후 `Resources.UnloadUnusedAssets()` + `GC.Collect()` 1회 호출로 참조 끊긴 에셋 회수.
-- **Addressable 명시적 Release** — `AsyncOperationHandle`를 보관해서 씬 해제 시 Release. 누락하면 텍스처가 VRAM에 남아 OOM 유발.
-- **오디오 클립 스트리밍** — 긴 BGM은 `Load Type: Streaming`으로 VRAM 절약.
-- 씬 간 공유 오브젝트는 별도의 Persistent 씬으로 분리, `DontDestroyOnLoad` 남발 금지.
+## 이벤트 버스: 시스템 간 통신을 묶기
 
-<!-- 구체적 수치와 프로파일링 결과는 비공개 -->
+모든 시스템 간 통신을 `EventsManager` 싱글턴을 통한 이벤트 버스 방식으로 정리해뒀다. 스테이지·NPC·스폰·시나리오 등 종류별로 분리.
+
+- `stage1Events` / `stage2Events` / `stage3Events` — 스테이지별 이벤트
+- `npcEvents` — NPC 대화
+- `spawnEvents` — 오브젝트 스폰
+- `scenarioEvents` — 스테이지 클리어, 리스폰
+
+구독은 **반드시 `Awake()`에서** 하는 걸 팀 공통 규칙으로 정했다. Fusion의 `Spawned()`가 `Start()`보다 먼저 호출될 수 있어서 `Start()`에서 구독하면 이벤트를 놓치는 일이 생긴다.
+
+## Observer / Explorer 비대칭 역할
+
+두 플레이어가 다른 인풋 채널로 같은 월드에 참여한다.
+
+- **Observer(1)**: `ViewerGunHandler`로 총을 제어. X버튼으로 활성/비활성 토글.
+- **Explorer(2)**: 직접 이동하고 블록을 밟아 퍼즐을 진행.
+
+역할이 다르면 "볼 수 있는 것"과 "건드릴 수 있는 것"도 다르기 때문에, 핸들러를 역할 기준으로 나누고 같은 이벤트에 역할별 핸들러가 각자 반응하도록 짜는 쪽을 택했다. 예: `ExplorerMarkerController`는 `OnGunSpawned`가 아니라 `OnNPCDialogueEnded(Stage1)`에 붙여야 타이밍이 맞는다는 걸 실패하면서 배운 뒤 규칙으로 남겼다.
+
+## VR 인터랙션 시스템
+
+- **Magic Gun** (`Player_Tools/MagicGun/`) — 레이캐스트로 대상을 선택해 `RemoteSelectDragger`로 Y축 이동. `GunMovement`는 `NetworkBehaviour`로 동기화.
+- **VR Socket** (`Interaction/VRSocketSystem/`) — 카드-소켓 매칭 퍼즐.
+- **Block Stepping** (`Interaction/Step/`) — 블록 밟기. `Stage1Events.onStepped` 발행 → 오렌지 발광 + RPC 동기화.
+- **Grab / Collision** — AutoHand 기반 집기와 충돌 반응 확장.
+
+인터랙션이 네트워크에 걸릴 때 RPC는 `ScenarioSync.Main.RPC_*()`를 통해서만 호출하는 걸 ADR-004로 박아뒀다.
+
+## VR 친화적 UI 패턴
+
+로비/메인의 UI 스크립트 쪽(`Assets/02.Scripts/UI/`)에서 정리한 VR UI 공통 규칙.
+
+- **3-State 스프라이트 교체** — normal / hover / clicked. `EmotionButton` 패턴을 이어받아 `LobbyMenuButton`, `SliderHandleVisual`로 확장.
+- **isTransitioning 잠금** — VR 트리거 더블클릭을 막기 위해 전환 중 추가 클릭은 버린다.
+- **`DOKill()` 먼저** — `UIAnim` 직접 호출 전 기존 트윈을 정리해 충돌 방지.
+- **페이드 기반 전환** — `UIAnim.FadeIn/FadeOut` + `FadeUI`(OnEnable에서 자동 FadeIn)로 화면·패널 전환.
+- **Canvas VR 검증** — `CanvasVRSetupValidator`, `HandCanvasPointerSetupValidator`로 VR 포인터·캔버스 설정이 엇나간 경우를 에디터/런타임에서 잡는다.
+
+같은 UI 패턴을 Emotion UI, Flashlight UI, Explorer Marker, Mission Button 등에도 동일하게 적용한다.
+
+## 씬 간 영속 설정
+
+언어 같은 영속 설정은 `ApiModelConfig.Instance.SttLanguage`에 담아 `PlayerPrefs`로 저장한다. 로비의 `SettingPanelController`가 저장하고, 메인 씬의 각 스크립트가 `Awake()`에서 읽는 방식. 전달용 핸들러를 별도로 두지 않는 쪽을 택했다(로컬 UI용 영속 설정이라 RPC도 불필요).
+
+## 코드 스타일 규칙 (팀 기준)
+
+- 한국어 주석·영어 커밋(Conventional Commits).
+- 매직 넘버 금지 → `const` 또는 `[SerializeField]`.
+
+<!-- 구체 시나리오·성능 수치·사내 논의는 비공개 -->
 
 
 ---

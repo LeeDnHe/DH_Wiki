@@ -16,11 +16,12 @@
 - [PBV 스마트 설계 시스템](https://leednhe.github.io/DH_Wiki/projects/pbv-webgl.html): Unity WebGL 기반 목적 기반 차량(PBV) 3D 설계 툴. 아키모스 플랫폼 연동, 데이터-주도 스폰
 - [FolderEscape](https://leednhe.github.io/DH_Wiki/projects/folder-escape.html): TypeScript + Vite + Tauri 기반 1인 개발 OS 해킹 퍼즐 게임. 주소창이 곧 진행도
 
-## 개발 노하우
+## 개발 노하우 (프로젝트별 본인 역할 기반 노트)
 
-- [Unity WebGL + UI Toolkit](https://leednhe.github.io/DH_Wiki/knowledge/unity-webgl-ui-toolkit.html): WebGL 환경에서의 UI Toolkit 활용 패턴
-- [VR Performance on Quest](https://leednhe.github.io/DH_Wiki/knowledge/vr-performance-quest.html): Quest 3 draw call 최적화 및 렌더링
-- [Claude Code Workflow](https://leednhe.github.io/DH_Wiki/knowledge/claude-code-workflow.html): 다중 에이전트 기반 개발 워크플로우
+- [Claude Code로 멀티 프로젝트 굴리기](https://leednhe.github.io/DH_Wiki/knowledge/claude-code-workflow.html): Unity·WebGL·TypeScript 프로젝트를 3-Agent 파이프라인과 CLAUDE.md 계층 구조로 병행 개발
+- [PBV 설계 툴을 만들면서 내가 짠 구조](https://leednhe.github.io/DH_Wiki/knowledge/unity-webgl-ui-toolkit.html): 아키모스 JSON 연동, dynamic_properties 스키마, UI Toolkit 디자인 시스템, Addressable 카탈로그
+- [XREAL Two of Us에서 내가 맡은 VR 개발](https://leednhe.github.io/DH_Wiki/knowledge/vr-performance-quest.html): EventsManager 이벤트 버스, VR 인터랙션 시스템(Magic Gun/VR Socket/Block Stepping), VR 친화적 UI 패턴
+- [FolderEscape를 1인 개발하며 박아둔 규칙](https://leednhe.github.io/DH_Wiki/knowledge/folder-escape-service-layer.html): 핸들러/서비스 분리, 파일탐색기 UI 통일, Claude Code 협업 규칙
 
 ## Optional
 

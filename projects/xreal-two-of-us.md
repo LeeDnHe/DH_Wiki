@@ -3,13 +3,9 @@ title: XREAL Two of Us
 status: active
 period: 2025~
 role: Unity Client Developer
-stack: [Unity 6, Meta Quest]
+stack: [Unity 6, C#, Meta Quest, XR Interaction Toolkit, OpenXR, Photon Fusion 2, AutoHand]
 team:
   - 이동희 (Development)
-  - 서진 조 (Planning)
-  - 다현 고 (Design)
-links:
-  - org: https://github.com/XREAL-Two-Of-Us
 milestones:
   - IEEE VR 2026 XR Gallery 전시 완료
   - 전시 QA 기반 디벨롭 + 후반부 스테이지 개발 + 출시 준비
