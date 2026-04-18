@@ -13,7 +13,7 @@ Unity 기반 게임/XR 개발자. 협동 VR 게임, Unity WebGL PBV 설계 툴, 
 
 ## 현재 무엇을 하는가
 
-- **XREAL Two of Us** — Unity 6 기반 Meta Quest 비대칭 협동 퍼즐 어드벤처 VR 게임. IEEE VR 2026 XR Gallery 전시 준비 중.
+- **XREAL Two of Us** — Unity 6 기반 Meta Quest 비대칭 협동 퍼즐 어드벤처 VR 게임. IEEE VR 2026 XR Gallery 전시 완료, 전시 기반 QA 디벨롭 + 후반부 스테이지 개발 + 출시 준비 중.
 - **PBV 스마트 설계 시스템** — Unity WebGL 기반 목적 기반 차량(PBV, Purpose-Built Vehicle) 3D 설계 툴. 아키모스 플랫폼 연동, `dynamic_properties.json` 기반 데이터-주도 스폰.
 - **FolderEscape** — TypeScript + Vite + Tauri 기반 1인 개발 OS 해킹 퍼즐 게임. "삭제 예정인 파일에 갇힌 플레이어의 탈출" 컨셉, 스토브인디 공모전 MVP(10 스테이지) 제출, Stage 11까지 구현.
 - **AI 증강 개발 워크플로우** — Claude Code 기반 Planner/Generator/Evaluator 파이프라인, 메모리-계층 CLAUDE.md 구조, Gmail→Notion 자동화 등.
@@ -31,7 +31,7 @@ Unity 기반 게임/XR 개발자. 협동 VR 게임, Unity WebGL PBV 설계 툴, 
 - **UI**: Unity UI Toolkit (USS/UXML), uGUI + DOTween, HTML/CSS + GSAP
 - **툴체인**: Claude Code, MCP, Notion API, GitHub
 
-자세한 매트릭스는 [skills.md](/career/skills.md) 참고.
+자세한 매트릭스는 [skills.md](career/skills.md) 참고.
 
 ## 연락 & 링크
 

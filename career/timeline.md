@@ -10,7 +10,7 @@ updated: 2026-04-19
 ## 2026
 
 ### 2026 Q1~Q2 (진행 중)
-- **XREAL Two of Us** — IEEE VR 2026 XR Gallery 전시 준비
+- **XREAL Two of Us** — IEEE VR 2026 XR Gallery 전시 완료. 전시 기반 QA 디벨롭 + 후반부 스테이지 개발 + 출시 준비 진행 중
 - **AI 증강 개발 워크플로우** — Planner/Generator/Evaluator 3-agent 파이프라인 구축
 
 ## 2025

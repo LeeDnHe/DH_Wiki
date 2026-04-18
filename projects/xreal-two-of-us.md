@@ -9,7 +9,8 @@ team:
   - 서진 조 (Planning)
   - 다현 고 (Design)
 milestones:
-  - IEEE VR 2026 XR Gallery 전시 준비
+  - IEEE VR 2026 XR Gallery 전시 완료
+  - 전시 QA 기반 디벨롭 + 후반부 스테이지 개발 + 출시 준비
 ---
 
 # XREAL Two of Us
@@ -30,8 +31,9 @@ Meta Quest standalone 플랫폼용 비대칭 협동(asymmetric co-op) 퍼즐 어
 Unity 클라이언트 구현 전반(게임플레이·렌더링·UI). 기획은 서진 조, 디자인은 다현 고와 협업.
 음성 STT·GPT 분석 파트는 본인 담당 아님.
 
-## 배포/전시 타깃
-- IEEE VR 2026 XR Gallery
+## 배포/전시
+- **IEEE VR 2026 XR Gallery 전시 완료** — 전시 기간 중 수집한 QA 피드백을 디벨롭에 반영 중
+- **후반부 스테이지 개발 + 출시 준비** 진행 중
 - 검토 중: 가상융합서비스 개발자 경진대회, AIXR XR Awards, NYX Game Awards
 
 <!-- 내부 개발 기록·실패 로그는 비공개 위키에만 기록 -->

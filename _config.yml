@@ -1,0 +1,27 @@
+title: Donghee Lee Wiki
+description: "Unity 기반 게임/XR 개발자 이동희의 공개 LLM 위키"
+baseurl: "/DH_Wiki"
+url: "https://leednhe.github.io"
+
+theme: jekyll-theme-minimal
+
+markdown: kramdown
+highlighter: rouge
+
+# include: _meta 디렉토리는 언더스코어로 시작해 기본적으로 제외됨. 명시적 포함.
+include:
+  - _meta
+
+# 렌더에서 제외
+exclude:
+  - scripts
+  - CLAUDE.md
+  - node_modules
+  - ".claude"
+
+# 기본 레이아웃: minima 테마의 default
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
