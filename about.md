@@ -3,19 +3,20 @@ title: About Donghee Lee
 updated: 2026-04-19
 language: ko
 canonical: true
-summary: "Unity 기반 XR/VR 개발자. Meta Quest 협동 게임과 WebGL 전기차 설계 플랫폼 제작."
+summary: "Unity 기반 게임/XR 개발자. Meta Quest 협동 VR 게임, Unity WebGL 기반 PBV 스마트 설계 시스템, TypeScript 1인 개발 퍼즐 게임을 병행."
 ---
 
 # 이동희 (Donghee Lee)
 
 ## 한 줄 소개
-Unity 기반 XR/VR 개발자. 협동 VR 게임과 WebGL 전기차 설계 플랫폼을 만들며, Claude Code를 이용한 AI 증강 개발 워크플로우를 적극적으로 탐구합니다.
+Unity 기반 게임/XR 개발자. 협동 VR 게임, Unity WebGL PBV 설계 툴, TypeScript 1인 개발 퍼즐 게임을 병행하며, Claude Code로 AI 증강 개발 워크플로우를 운용합니다.
 
 ## 현재 무엇을 하는가
 
-- **XREAL Two of Us** — Unity 6 + Photon Fusion 2 기반 Meta Quest 협동 퍼즐 어드벤처 VR 게임. IEEE VR 2026 XR Gallery 전시 준비 중.
-- **PBV WebGL Platform** — Unity UI Toolkit 기반 전기차 설계 플랫폼.
-- **AI 증강 개발 워크플로우** — Claude Code 기반 Planner/Generator/Evaluator 파이프라인, 팀용 Discord 봇, Gmail→Notion 자동화 등.
+- **XREAL Two of Us** — Unity 6 기반 Meta Quest 비대칭 협동 퍼즐 어드벤처 VR 게임. IEEE VR 2026 XR Gallery 전시 준비 중.
+- **PBV 스마트 설계 시스템** — Unity WebGL 기반 목적 기반 차량(PBV, Purpose-Built Vehicle) 3D 설계 툴. 아키모스 플랫폼 연동, `dynamic_properties.json` 기반 데이터-주도 스폰.
+- **FolderEscape** — TypeScript + Vite + Tauri 기반 1인 개발 OS 해킹 퍼즐 게임. "삭제 예정인 파일에 갇힌 플레이어의 탈출" 컨셉, 스토브인디 공모전 MVP(10 스테이지) 제출, Stage 11까지 구현.
+- **AI 증강 개발 워크플로우** — Claude Code 기반 Planner/Generator/Evaluator 파이프라인, 메모리-계층 CLAUDE.md 구조, Gmail→Notion 자동화 등.
 
 ## 어떤 개발자인가
 
@@ -25,10 +26,10 @@ Unity 기반 XR/VR 개발자. 협동 VR 게임과 WebGL 전기차 설계 플랫�
 
 ## 기술 스택 (요약)
 
-- **엔진/플랫폼**: Unity 6, Meta Quest (standalone), WebGL
-- **멀티플레이**: Photon Fusion 2, Vivox
-- **UI**: Unity UI Toolkit (USS/UXML), uGUI + DOTween
-- **AI 통합**: GPT, Naver Clova STT
+- **엔진/플랫폼**: Unity 6, Meta Quest (standalone), WebGL, Web (Vite + Tauri)
+- **언어**: C# (Unity), TypeScript (FolderEscape)
+- **UI**: Unity UI Toolkit (USS/UXML), uGUI + DOTween, HTML/CSS + GSAP
+- **AI 통합**: GPT
 - **툴체인**: Claude Code, MCP, Notion API, GitHub
 
 자세한 매트릭스는 [skills.md](/career/skills.md) 참고.

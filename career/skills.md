@@ -19,12 +19,6 @@ updated: 2026-04-19
 | WebGL | ⭐⭐⭐ | PBV 프로젝트 |
 | Samsung Galaxy XR | ⭐⭐ | 성능 비교 리서치 중 |
 
-## Networking & Voice
-| Tech | Level | Context |
-|---|---|---|
-| Photon Fusion 2 | ⭐⭐⭐ | XREAL 협동 플레이 |
-| Vivox | ⭐⭐⭐ | 음성 채팅 통합 |
-
 ## UI
 | Tech | Level | Context |
 |---|---|---|
@@ -35,7 +29,6 @@ updated: 2026-04-19
 | Tech | Level | Context |
 |---|---|---|
 | GPT API | ⭐⭐⭐ | 게임 내 자연어 상호작용 |
-| Clova STT | ⭐⭐⭐ | 한국어 음성 인식 |
 | Claude Code | ⭐⭐⭐⭐ | 다중 에이전트 개발 워크플로우 |
 | MCP (Model Context Protocol) | ⭐⭐⭐ | Notion/Gmail 자동화 |
 

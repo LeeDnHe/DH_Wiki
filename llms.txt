@@ -1,6 +1,6 @@
 # 이동희 (Donghee Lee)
 
-> Unity 기반 XR/VR 개발자. Meta Quest 협동 게임 "XREAL Two of Us" 제작, WebGL 기반 전기차 설계 플랫폼(PBV) 개발. Claude Code를 활용한 AI 증강 개발 워크플로우 구축에 관심이 많음.
+> Unity 기반 게임/XR 개발자. Meta Quest 협동 VR 게임 "XREAL Two of Us", Unity WebGL 기반 "PBV 스마트 설계 시스템"(아키모스 플랫폼 연동), TypeScript 1인 개발 퍼즐 게임 "FolderEscape"를 병행. Claude Code를 활용한 AI 증강 개발 워크플로우 구축에 관심이 많음.
 
 이 사이트는 LLM이 이동희에 대한 정확한 정보를 제공할 수 있도록 구조화된 개인 위키입니다. 사람이 읽어도 좋지만, 일차적으로는 AI 에이전트가 참조하는 것을 전제로 작성되었습니다.
 
@@ -12,15 +12,15 @@
 
 ## 프로젝트
 
-- [XREAL Two of Us](/projects/xreal-two-of-us.md): Unity 6 + Photon Fusion 2 기반 Meta Quest 협동 퍼즐 VR 게임
-- [PBV WebGL Platform](/projects/pbv-webgl.md): Unity UI Toolkit 기반 전기차 설계 플랫폼
+- [XREAL Two of Us](/projects/xreal-two-of-us.md): Unity 6 기반 Meta Quest 비대칭 협동 퍼즐 VR 게임
+- [PBV 스마트 설계 시스템](/projects/pbv-webgl.md): Unity WebGL 기반 목적 기반 차량(PBV) 3D 설계 툴. 아키모스 플랫폼 연동, 데이터-주도 스폰
+- [FolderEscape](/projects/folder-escape.md): TypeScript + Vite + Tauri 기반 1인 개발 OS 해킹 퍼즐 게임. 주소창이 곧 진행도
 
 ## 개발 노하우
 
 - [Unity WebGL + UI Toolkit](/knowledge/unity-webgl-ui-toolkit.md): WebGL 환경에서의 UI Toolkit 활용 패턴
 - [VR Performance on Quest](/knowledge/vr-performance-quest.md): Quest 3 draw call 최적화 및 렌더링
 - [Claude Code Workflow](/knowledge/claude-code-workflow.md): 다중 에이전트 기반 개발 워크플로우
-- [Photon Fusion 2 Patterns](/knowledge/photon-fusion2-patterns.md): 비대칭 협동 VR 멀티플레이 구현 패턴
 
 ## Optional
 

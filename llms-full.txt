@@ -13,19 +13,20 @@ title: About Donghee Lee
 updated: 2026-04-19
 language: ko
 canonical: true
-summary: "Unity 기반 XR/VR 개발자. Meta Quest 협동 게임과 WebGL 전기차 설계 플랫폼 제작."
+summary: "Unity 기반 게임/XR 개발자. Meta Quest 협동 VR 게임, Unity WebGL 기반 PBV 스마트 설계 시스템, TypeScript 1인 개발 퍼즐 게임을 병행."
 ---
 
 # 이동희 (Donghee Lee)
 
 ## 한 줄 소개
-Unity 기반 XR/VR 개발자. 협동 VR 게임과 WebGL 전기차 설계 플랫폼을 만들며, Claude Code를 이용한 AI 증강 개발 워크플로우를 적극적으로 탐구합니다.
+Unity 기반 게임/XR 개발자. 협동 VR 게임, Unity WebGL PBV 설계 툴, TypeScript 1인 개발 퍼즐 게임을 병행하며, Claude Code로 AI 증강 개발 워크플로우를 운용합니다.
 
 ## 현재 무엇을 하는가
 
-- **XREAL Two of Us** — Unity 6 + Photon Fusion 2 기반 Meta Quest 협동 퍼즐 어드벤처 VR 게임. IEEE VR 2026 XR Gallery 전시 준비 중.
-- **PBV WebGL Platform** — Unity UI Toolkit 기반 전기차 설계 플랫폼.
-- **AI 증강 개발 워크플로우** — Claude Code 기반 Planner/Generator/Evaluator 파이프라인, 팀용 Discord 봇, Gmail→Notion 자동화 등.
+- **XREAL Two of Us** — Unity 6 기반 Meta Quest 비대칭 협동 퍼즐 어드벤처 VR 게임. IEEE VR 2026 XR Gallery 전시 준비 중.
+- **PBV 스마트 설계 시스템** — Unity WebGL 기반 목적 기반 차량(PBV, Purpose-Built Vehicle) 3D 설계 툴. 아키모스 플랫폼 연동, `dynamic_properties.json` 기반 데이터-주도 스폰.
+- **FolderEscape** — TypeScript + Vite + Tauri 기반 1인 개발 OS 해킹 퍼즐 게임. "삭제 예정인 파일에 갇힌 플레이어의 탈출" 컨셉, 스토브인디 공모전 MVP(10 스테이지) 제출, Stage 11까지 구현.
+- **AI 증강 개발 워크플로우** — Claude Code 기반 Planner/Generator/Evaluator 파이프라인, 메모리-계층 CLAUDE.md 구조, Gmail→Notion 자동화 등.
 
 ## 어떤 개발자인가
 
@@ -35,10 +36,10 @@ Unity 기반 XR/VR 개발자. 협동 VR 게임과 WebGL 전기차 설계 플랫�
 
 ## 기술 스택 (요약)
 
-- **엔진/플랫폼**: Unity 6, Meta Quest (standalone), WebGL
-- **멀티플레이**: Photon Fusion 2, Vivox
-- **UI**: Unity UI Toolkit (USS/UXML), uGUI + DOTween
-- **AI 통합**: GPT, Naver Clova STT
+- **엔진/플랫폼**: Unity 6, Meta Quest (standalone), WebGL, Web (Vite + Tauri)
+- **언어**: C# (Unity), TypeScript (FolderEscape)
+- **UI**: Unity UI Toolkit (USS/UXML), uGUI + DOTween, HTML/CSS + GSAP
+- **AI 통합**: GPT
 - **툴체인**: Claude Code, MCP, Notion API, GitHub
 
 자세한 매트릭스는 [skills.md](/career/skills.md) 참고.
@@ -79,12 +80,6 @@ updated: 2026-04-19
 | WebGL | ⭐⭐⭐ | PBV 프로젝트 |
 | Samsung Galaxy XR | ⭐⭐ | 성능 비교 리서치 중 |
 
-## Networking & Voice
-| Tech | Level | Context |
-|---|---|---|
-| Photon Fusion 2 | ⭐⭐⭐ | XREAL 협동 플레이 |
-| Vivox | ⭐⭐⭐ | 음성 채팅 통합 |
-
 ## UI
 | Tech | Level | Context |
 |---|---|---|
@@ -95,7 +90,6 @@ updated: 2026-04-19
 | Tech | Level | Context |
 |---|---|---|
 | GPT API | ⭐⭐⭐ | 게임 내 자연어 상호작용 |
-| Clova STT | ⭐⭐⭐ | 한국어 음성 인식 |
 | Claude Code | ⭐⭐⭐⭐ | 다중 에이전트 개발 워크플로우 |
 | MCP (Model Context Protocol) | ⭐⭐⭐ | Notion/Gmail 자동화 |
 
@@ -152,32 +146,91 @@ LLM이 읽었을 때 "이 사람이 이 기술로 어떤 문제를 풀어왔는�
 ---
 
 
+<!-- FILE: projects/folder-escape.md -->
+
+---
+title: FolderEscape
+status: active
+period: 2026~
+role: Solo Developer (기획·개발·사운드 전반)
+stack: [TypeScript, Vite, GSAP, Tauri, Web Audio API]
+team:
+  - 이동희 (Solo)
+milestones:
+  - MVP (10 스테이지) 완성 — 스토브인디 공모전 제출
+  - Stage 00~11 구현 완료
+  - Stage 12 제작 중
+---
+
+# FolderEscape
+
+## 개요
+"너는 삭제 예정인 파일에 갇혔다." 파일 탐색기 안에서 `unknown_file.???`에 갇힌 플레이어가 주변 파일·폴더를 조작해 탈출하는 OS 해킹 퍼즐 게임.
+
+## 핵심 특징
+- **주소창이 곧 진행도** — 브레드크럼이 전체 탈출 경로를 표시하고, 스테이지를 클리어할 때마다 세그먼트가 하나씩 사라지며 루트(`C:`)에 가까워짐. 별도의 스테이지 선택 화면 없음.
+- **메타적 몰입 장치** — 실제 Windows 탐색기 UI를 HTML/CSS로 재현. 커서 자체가 플레이어의 손이 되고, "내가 파일"이라는 감각이 핵심 훅.
+- **조작 순서 중심의 Softlock 설계** — 잘못된 순서로 조작하면 퍼즐이 풀 수 없는 상태(Softlock)에 빠질 수 있음. Ctrl+Z와 F5(새로고침)로 복구 가능.
+
+## 기술 도전
+- 탐색기 UI 통일성 유지 — 아이콘/목록/타일 뷰 전환이 퍼즐의 일부로 작동하도록 레이아웃/그리드 체계를 명시적으로 고정.
+- 파일 속성의 의미론 설계 — 이름(`NAME_BEHAVIOR_MAP`)과 확장자(`EXT_BEHAVIOR_MAP`)가 파일의 성질·행동을 결정하는 매핑 테이블 구조.
+- Web 기반에서의 퍼즐 연출 — GSAP 애니메이션과 Web Audio 효과음으로 Stage 03 폭발·Stage 04 중력 낙하 같은 물리 연출 구현.
+
+## 역할
+1인 개발. 기획·TypeScript 구현·사운드·UI 전반. `.claude/agents/`에 Planner/Generator/Evaluator 3-Agent 파이프라인을 구성해 운용.
+
+## 배포/전시 타깃
+- 스토브인디 공모전 MVP(10 스테이지) 제출 완료
+- Steam (PC) 타깃. Tauri 데스크탑 패키징 준비 중.
+
+<!-- 세부 스테이지 솔루션·내부 기획 메모는 비공개 위키 -->
+
+
+---
+
+
 <!-- FILE: projects/pbv-webgl.md -->
 
 ---
-title: PBV WebGL Platform
+title: PBV 스마트 설계 시스템
 status: active
-role: Developer
-stack: [Unity, UI Toolkit, WebGL]
+period: 2024~
+role: Developer (Unity WebGL 클라이언트)
+stack: [Unity 6, WebGL, UI Toolkit, URP, Addressable, JSON Schema]
+team:
+  - 이동희 (Development)
+milestones:
+  - 충돌/거리/체적/무게 분석 기능 완성
+  - 차체 높이 · 열 분석 개발 중
+  - 주행 시뮬레이션 씬(AnimationScene) 개발 예정
 ---
 
-# PBV WebGL Platform
+# PBV 스마트 설계 시스템
 
 ## 개요
-Unity UI Toolkit 기반 WebGL 전기차(PBV, Purpose Built Vehicle) 설계 플랫폼.
+아키모스 개방형 설계 플랫폼(OnMakers 운영)의 **스마트 설계 시스템** 모듈. 웹 브라우저 위에서 Unity WebGL 빌드로 실행되며, 목적 기반 차량(PBV, Purpose-Built Vehicle)의 내·외장 구성을 3D 환경에서 자유롭게 설계·검토할 수 있는 인터랙티브 툴.
 
 ## 핵심 특징
-- **브라우저 기반** — 별도 설치 없이 웹에서 전기차 커스터마이징
-- **UI Toolkit 기반 디자인 시스템** — USS/UXML로 구성된 재사용 가능한 컴포넌트
-- **Pretendard / NotoSansKR** 폰트 기반 한국어 UI
+- **데이터-주도 스폰** — `dynamic_properties.json`에 모든 차량·부품의 물리 속성, 배치 제약(Dot/Line/Plane), 스폰 후 자동 동작(카메라 이동, 자식 숨김, 도어 개방 등)을 정의. Addressable 레이블로 동적 로드.
+- **JS ↔ Unity 양방향 연동** — 아키모스 웹에서 JSON 명령 전송, Unity에서 분석 결과·이벤트·측정값을 JS 콜백으로 회신. 모든 기능이 웹에서 제어 가능.
+- **커맨드 패턴 Undo/Redo** — 스폰·삭제, 색상/텍스처, 기즈모 변환, 데칼, 환경 변경, 체적 계산까지 모두 커맨드 단위로 기록되어 Ctrl+Z/Ctrl+Y로 복원.
+- **설계 검증 분석** — 메시 기반 충돌 분석(빨간 박스 시각화), 두 점 거리 측정, 체적/무게중심/관성 모멘트 계산, 총 무게 측정.
 
-## 기술적 특이사항
-- WebGL 환경에서의 UI Toolkit 제약 사항을 고려한 패턴
-- Spacer 기반 간격 관리 시스템
-- 커스텀 uGUI 드롭다운(DOTween 애니메이션, 9-Slice 스프라이트, WebGL 안전 입력 처리)
+## 기술 도전
+- 아키모스(OnMakers) 플랫폼과의 JSON 명령 프로토콜 설계·버전 관리, JS↔Unity 비동기 통신의 타이밍·에러 처리
+- `dynamic_properties.json` 스키마 설계 — 차량/부품마다 물리 속성, 배치 제약(Dot/Line/Plane), 스폰 후 자동 동작(카메라 이동, 자식 숨김, 도어 개방 등)을 데이터로 기술하고, 스키마 변경이 런타임 동작에 일으키는 파급 최소화
+- Unity WebGL과 브라우저 이벤트 루프 사이의 입력 경계 처리
+- 대규모 부품 카탈로그(차량 5종 × 부품 40+종)의 Addressable 로드 성능
+- URP DecalProjector 기반 곡면 데칼의 정확한 투영과 배치 UX
 
-## 연관 스킬
-- `unity-ui-toolkit-design` (개인 Claude Code 스킬)
+## 역할
+Unity WebGL 클라이언트 구현 전반. 아키모스 플랫폼 팀(OnMakers)과 JSON 프로토콜·연동 인터페이스를 협의해 구현.
+
+## 배포 타깃
+- 아키모스 플랫폼 내 스마트 설계 시스템 모듈로 서비스
+
+<!-- 내부 수치·성능 데이터·클라이언트 논의는 비공개 위키 -->
 
 
 ---
@@ -190,7 +243,7 @@ title: XREAL Two of Us
 status: active
 period: 2025~
 role: Lead Developer (solo technical implementation)
-stack: [Unity 6, Photon Fusion 2, Vivox, GPT, Clova STT, Meta Quest]
+stack: [Unity 6, Meta Quest, GPT]
 team:
   - 이동희 (Development)
   - 서진 조 (Planning)
@@ -206,13 +259,13 @@ Meta Quest standalone 플랫폼용 비대칭 협동(asymmetric co-op) 퍼즐 어
 
 ## 핵심 특징
 - **비대칭 협동 역할 디자인** — 두 플레이어가 서로 다른 정보/능력을 가지고 퍼즐을 함께 풉니다.
-- **음성 기반 상호작용** — GPT + Clova STT 통합으로 자연어 상호작용을, Vivox로 플레이어 간 음성 채팅을 지원.
-- **Photon Fusion 2 기반 멀티플레이** — 저지연 동기화와 Quest standalone 성능 양립.
+- **자연어 상호작용** — GPT 통합으로 NPC/시스템과의 자연어 기반 인터랙션 구현.
+- **Quest standalone 최적화** — 저사양 기기에서도 쾌적한 협동 퍼즐 플레이가 가능한 렌더링·씬 구성.
 
 ## 기술 도전
 - Quest 3 기준 draw call 최적화 및 렌더링 파이프라인 튜닝
-- 비대칭 시점 간 상태 동기화 설계
-- 음성 파이프라인 지연 최소화
+- 비대칭 시점 간 게임플레이 상태 설계
+- 자연어 상호작용 응답성 확보
 
 ## 역할
 기술 구현 전반을 리드. 기획은 서진 조, 디자인은 다현 고와 협업.
@@ -231,76 +284,49 @@ Meta Quest standalone 플랫폼용 비대칭 협동(asymmetric co-op) 퍼즐 어
 
 ---
 title: Claude Code Workflow
-tags: [claude-code, ai-workflow, automation]
+tags: [claude-code, ai-workflow, automation, unity, typescript]
 updated: 2026-04-19
 maturity: draft
 ---
 
 # Claude Code를 활용한 개발 워크플로우
 
-> 이동희가 XREAL 프로젝트에서 실제로 운용 중인 AI 증강 개발 구조.
+> 게임 개발자로서 Unity 기반 VR/WebGL 프로젝트와 TypeScript 기반 1인 개발 프로젝트에서 공통으로 운용 중인 AI 증강 개발 구조.
 
 ## 3-Agent 파이프라인
 
-- **Planner** — 요구사항을 받고 작업을 분해. 전체 설계 먼저.
+- **Planner** — 요구사항을 받고 작업을 분해. 어떤 파일을 어떻게 고칠지 먼저 설명하고 승인받기 전까지 코드 작성 금지.
 - **Generator** — Planner의 계획에 따라 코드 생성.
-- **Evaluator** — Generator의 결과를 점검. Unity/C# 컨벤션, 성능, 게임 로직 일관성 관점에서 피드백.
+- **Evaluator** — Generator의 결과를 점검. 빌드·타입·런타임 오류, 컨벤션 준수, 핵심 로직 일관성 관점에서 피드백.
 
-각 역할은 `.claude/agents/`에 프롬프트로 분리되어 있고, 필요 시 슬래시 커맨드로 특정 에이전트만 호출 가능.
+각 역할은 `.claude/agents/`에 프롬프트로 분리되어 있고, 슬래시 커맨드로 특정 에이전트만 호출 가능. 파일 변경이 5개 이상 얽히는 작업에서 전체 파이프라인을 기동.
+
+### 검증 범위의 명확한 분리
+Evaluator는 직접 플레이 테스트하지 않음. 빌드 오류와 스크립트 오류(타입/런타임)까지만 검증하고, 실제 감각 확인은 사람이 담당. "AI에 위임 가능한 검증"과 "사람이 봐야 하는 검증"의 경계를 미리 정해두면 속도와 품질을 함께 잡기 쉬움.
 
 ## CLAUDE.md 계층
 
-- **Register (최상위 요약)** — 프로젝트 비전, 핵심 규칙. 짧게.
-- **Cache (자주 쓰는 컨벤션)** — 파일명 규칙, 네이밍, 아키텍처 원칙.
-- **RAM (상세 스펙)** — 필요할 때 참조할 세부 문서로 링크.
-- **Disk (전체 코드베이스)** — RAG 또는 직접 탐색.
+- **Register (최상위 규칙)** — 프로젝트 비전과 절대 규칙. 5~6줄 이내로 유지.
+- **Cache (라우팅 테이블)** — "이 작업을 할 때는 저 문서를 보라" 식의 매핑표. 매 세션 시작 시 참조.
+- **RAM (상세 스펙)** — 아키텍처, 컨벤션, 서비스 목록, 스테이지 스펙. 필요할 때만 로드.
+- **Disk (전체 코드베이스)** — 직접 탐색. 전체를 컨텍스트에 넣지 않음.
 
-## 팀 지원
+라우팅 테이블로 필요한 문서만 골라 참조해야 토큰이 덜 낭비됨. 모든 지식을 루트 CLAUDE.md에 몰아넣으면 계층이 무너지고 실제로 읽히는 정보가 오히려 줄어듦.
 
-- **Discord 봇** — 비개발자 팀원(기획/디자인)이 "XX 씬 상태 어때?" 같은 질문을 자연어로 할 수 있게 함. 봇이 코드베이스를 쿼리하고 답변.
+## 프로젝트별 적용 방식
+
+- **XREAL Two of Us (Unity 6, 소규모 팀)** — Planner가 비대칭 협동 시점별 게임플레이 상태 설계까지 포함해 작업을 분해. Evaluator는 Unity/C# 컨벤션과 Quest 성능 관점을 추가로 검사.
+- **PBV 스마트 설계 시스템 (Unity WebGL + 아키모스 웹 연동, 소규모 팀)** — `dynamic_properties.json` 같은 데이터 스키마가 차량/부품 동작을 정의하므로, Planner가 스키마 변경의 파급 범위를 먼저 분해. Evaluator는 JS↔Unity 콜백 계약과 커맨드 패턴 Undo/Redo 일관성을 추가로 검사.
+- **FolderEscape (TypeScript + Vite + Tauri, 1인 개발)** — 파일탐색기 UI 통일성과 "플랜 → 승인 → 코딩" 절차를 Register에 명시. 공용 로직은 서비스 레이어(`src/services/`)로 강제 흡수해 핸들러는 고유 로직만 담당.
 
 ## 하지 말 것
 
 - 매 세션마다 전체 코드베이스를 컨텍스트에 넣기 → 토큰 낭비.
-- 모든 지식을 CLAUDE.md에 몰아넣기 → 계층 붕괴.
+- 모든 지식을 루트 CLAUDE.md에 몰아넣기 → 계층 붕괴.
 - Evaluator 없는 생성 → 실수 누적.
+- AI에게 플레이테스트 요구 → 빌드/타입 검증까지가 AI의 경계.
 
 <!-- 실패 기록과 구체적 프롬프트 내용은 비공개 위키 -->
-
-
----
-
-
-<!-- FILE: knowledge/photon-fusion2-patterns.md -->
-
----
-title: Photon Fusion 2 Patterns for Asymmetric VR Co-op
-tags: [photon-fusion2, multiplayer, vr, asymmetric]
-updated: 2026-04-19
-maturity: draft
----
-
-# 비대칭 협동 VR 멀티플레이 패턴 (Photon Fusion 2)
-
-> XREAL Two of Us에서 사용하는 구현 패턴. 아직 초안.
-
-## 비대칭 협동의 핵심 과제
-- 두 플레이어가 서로 다른 정보를 봄 — 어디까지 동기화하고 어디까지 분리할지 결정
-- 한쪽의 입력이 다른 쪽 세계에 영향을 미침 — 권한(authority) 설계
-
-## 적용 중인 원칙
-- **State Authority 명확 분리** — 각 퍼즐 요소별로 권한 주체 고정
-- **이벤트 RPC 최소화** — NetworkedProperty 기반 상태 동기화 우선
-- **시점 전용 로컬 상태** — 상대에게 보이면 안 되는 정보는 서버에 올리지 않음
-
-## 상세 패턴
-
-TODO: 
-- Tick 기반 퍼즐 동기화 예제
-- 예측/롤백이 VR에서 주는 영향
-- 연결 끊김 복구 UX
-
-<!-- 실전 코드는 공개 가능 여부 확인 후 업데이트 -->
 
 
 ---
@@ -324,15 +350,27 @@ maturity: draft
 - **Pretendard / NotoSansKR** 고정 — 한국어 UI 품질 확보.
 - **WebGL 안전 입력 처리** — 브라우저 이벤트 루프와 Unity 입력 시스템의 경계에서 발생하는 이슈 회피.
 
+## 디자인 토큰 구조
+- **계층**: `tokens.base.uss`(원시 색·간격·반경) → `tokens.semantic.uss`(의미 토큰: surface, border, accent 등) → 컴포넌트별 USS.
+- **원시 값 직접 참조 금지** — 컴포넌트는 semantic 토큰만 바라보게 해서 테마 교체가 한 파일 수정으로 끝나도록 유지.
+- **Spacer 스케일**은 토큰으로 고정(예: xxs/xs/sm/md/lg/xl). 인라인 수치 금지.
+
+## UXML 구성 패턴
+- **Template 재사용** — 반복되는 카드·패널·리스트 아이템은 `.uxml` 템플릿으로 분리하고 런타임에서 `TemplateContainer`로 clone.
+- **상태는 클래스로** — `is-selected`, `is-disabled`, `is-loading` 등 상태 클래스를 USS에서 처리. 코드에서 스타일 직접 설정 금지.
+- **Query 캐싱** — `rootVisualElement.Q<>()`는 초기 1회만 호출해 필드에 저장. 매 프레임 쿼리 금지.
+
+## 주요 컴포넌트 유형
+- **패널/모달** — 제목·콘텐츠·푸터 슬롯을 UXML 템플릿화.
+- **리스트/드롭다운** — UI Toolkit `ListView` 기반 가상화 리스트 + 커스텀 아이템 템플릿.
+- **파라미터 인스펙터** — 숫자/토글/슬라이더/컬러피커 조합. 데이터 바인딩은 `SerializedObject` 대신 경량 뷰모델로 직접 연결(WebGL 리플렉션 비용 회피).
+- **토스트/알림** — USS 트랜지션 + 타이머 기반 자동 해제.
+
 ## 커스텀 uGUI 드롭다운 (별도)
-UI Toolkit이 아닌 uGUI 쪽에서 필요했던 커스텀 드롭다운은:
+UI Toolkit이 아닌 uGUI 쪽에서 필요했던 커스텀 드롭다운:
 - DOTween으로 애니메이션
 - 9-Slice 스프라이트로 반응형
 - 브라우저 포커스 전환 시의 입력 누락 방지 패턴
-
-## 상세 구현
-
-TODO: 실제 USS/UXML 예제, 디자인 토큰 구조, 주요 컴포넌트 목록.
 
 <!-- 자세한 코드는 공개해도 될지 판단 후 업데이트 -->
 
@@ -361,13 +399,27 @@ maturity: draft
 ## 크로스 플랫폼 리서치
 - Quest 3 vs. Samsung Galaxy XR 렌더링 특성 비교 (진행 중)
 
-## 상세 패턴
+## GPU Instancing 활용 기준
+- **같은 메시 · 같은 머티리얼**이 N개 이상 반복되는 오브젝트에만 적용. 1~2개뿐이면 오히려 오버헤드.
+- **MaterialPropertyBlock**으로 색/파라미터 변주. 머티리얼 인스턴스 분기로 배치가 깨지지 않도록.
+- 동적으로 스폰되는 프롭은 **프리팹 단계에서 Enable GPU Instancing**을 켜두고, 코드에서 머티리얼을 교체하지 않음.
 
-TODO:
-- GPU Instancing 활용 기준
-- SRP Batcher 호환 셰이더 규칙
-- URP 경량화 설정
-- 씬 로딩/해제 시 메모리 관리
+## SRP Batcher 호환 셰이더 규칙
+- 모든 머티리얼은 **Shader Graph 또는 SRP Batcher 호환 HLSL**로 통일. Standard Surface Shader는 금지.
+- `UnityPerMaterial` CBuffer 레이아웃을 유지 — 프로퍼티 추가 시 전체 머티리얼 일괄 적용.
+- 커스텀 셰이더는 Frame Debugger로 SRP Batcher 그룹이 끊기지 않는지 확인 후 머지.
+
+## URP 경량화 설정
+- **MSAA 2~4x** 기본. 8x는 비용 대비 이득 없음.
+- **Post-processing 최소화** — Bloom/DoF는 씬 단위로 on/off. 풀타임 활성화 금지.
+- **Shadow**: Realtime shadow는 주요 동적 오브젝트에만. 나머지는 라이트맵 + 베이크.
+- **Renderer Features**는 필요한 씬에서만 활성화되도록 Renderer Asset 분리.
+
+## 씬 로딩/해제 시 메모리 관리
+- 씬 전환 직후 `Resources.UnloadUnusedAssets()` + `GC.Collect()` 1회 호출로 참조 끊긴 에셋 회수.
+- **Addressable 명시적 Release** — `AsyncOperationHandle`를 보관해서 씬 해제 시 Release. 누락하면 텍스처가 VRAM에 남아 OOM 유발.
+- **오디오 클립 스트리밍** — 긴 BGM은 `Load Type: Streaming`으로 VRAM 절약.
+- 씬 간 공유 오브젝트는 별도의 Persistent 씬으로 분리, `DontDestroyOnLoad` 남발 금지.
 
 <!-- 구체적 수치와 프로파일링 결과는 비공개 -->
 
