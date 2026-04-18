@@ -1,4 +1,4 @@
-# donghee-lee-wiki
+# DH_Wiki
 
 이동희의 공개 LLM 위키. 사람과 AI가 함께 읽는 개인 지식 베이스.
 
