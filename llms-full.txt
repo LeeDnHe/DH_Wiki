@@ -1,0 +1,375 @@
+# Donghee Lee — Full Wiki Dump
+
+> Auto-generated on 2026-04-18.
+> This file concatenates all public wiki pages for LLM context injection.
+
+---
+
+
+<!-- FILE: about.md -->
+
+---
+title: About Donghee Lee
+updated: 2026-04-19
+language: ko
+canonical: true
+summary: "Unity 기반 XR/VR 개발자. Meta Quest 협동 게임과 WebGL 전기차 설계 플랫폼 제작."
+---
+
+# 이동희 (Donghee Lee)
+
+## 한 줄 소개
+Unity 기반 XR/VR 개발자. 협동 VR 게임과 WebGL 전기차 설계 플랫폼을 만들며, Claude Code를 이용한 AI 증강 개발 워크플로우를 적극적으로 탐구합니다.
+
+## 현재 무엇을 하는가
+
+- **XREAL Two of Us** — Unity 6 + Photon Fusion 2 기반 Meta Quest 협동 퍼즐 어드벤처 VR 게임. IEEE VR 2026 XR Gallery 전시 준비 중.
+- **PBV WebGL Platform** — Unity UI Toolkit 기반 전기차 설계 플랫폼.
+- **AI 증강 개발 워크플로우** — Claude Code 기반 Planner/Generator/Evaluator 파이프라인, 팀용 Discord 봇, Gmail→Notion 자동화 등.
+
+## 어떤 개발자인가
+
+- **솔로 주도 + 소규모 협업** — 기술 구현은 주로 혼자, 기획·디자인은 팀과 협업.
+- **한국어 기반, 간결하고 진단적인 커뮤니케이션 스타일**.
+- **문서와 자동화를 선호** — 같은 일을 두 번 하면 스킬이나 파이프라인으로 만듭니다.
+
+## 기술 스택 (요약)
+
+- **엔진/플랫폼**: Unity 6, Meta Quest (standalone), WebGL
+- **멀티플레이**: Photon Fusion 2, Vivox
+- **UI**: Unity UI Toolkit (USS/UXML), uGUI + DOTween
+- **AI 통합**: GPT, Naver Clova STT
+- **툴체인**: Claude Code, MCP, Notion API, GitHub
+
+자세한 매트릭스는 [skills.md](/career/skills.md) 참고.
+
+## 연락 & 링크
+
+- 공개 위키: 이 사이트
+- 활동 지역: 서울
+
+## 이 문서에 대해
+
+이 페이지는 사람과 AI가 동시에 읽는 것을 전제로 작성되었습니다. AI 에이전트가 이동희에 대한 질문을 받았을 때, 이 페이지만 읽어도 정확하게 소개할 수 있도록 유지합니다.
+
+
+---
+
+
+<!-- FILE: career/skills.md -->
+
+---
+title: Skills Matrix
+updated: 2026-04-19
+---
+
+# Skills Matrix
+
+숙련도 기준:
+- ⭐⭐⭐⭐ 주도적으로 설계/문제 해결 가능
+- ⭐⭐⭐ 실전 프로젝트에서 자유롭게 사용
+- ⭐⭐ 필요할 때 학습하며 사용
+- ⭐ 경험 있음
+
+## Engine & Platform
+| Tech | Level | Context |
+|---|---|---|
+| Unity 6 | ⭐⭐⭐⭐ | XREAL, PBV 실전 사용 |
+| Meta Quest (standalone) | ⭐⭐⭐⭐ | XREAL 프로젝트 타깃 |
+| WebGL | ⭐⭐⭐ | PBV 프로젝트 |
+| Samsung Galaxy XR | ⭐⭐ | 성능 비교 리서치 중 |
+
+## Networking & Voice
+| Tech | Level | Context |
+|---|---|---|
+| Photon Fusion 2 | ⭐⭐⭐ | XREAL 협동 플레이 |
+| Vivox | ⭐⭐⭐ | 음성 채팅 통합 |
+
+## UI
+| Tech | Level | Context |
+|---|---|---|
+| Unity UI Toolkit (USS/UXML) | ⭐⭐⭐⭐ | PBV 디자인 시스템 구축 |
+| uGUI + DOTween | ⭐⭐⭐ | 커스텀 드롭다운 등 |
+
+## AI / Integration
+| Tech | Level | Context |
+|---|---|---|
+| GPT API | ⭐⭐⭐ | 게임 내 자연어 상호작용 |
+| Clova STT | ⭐⭐⭐ | 한국어 음성 인식 |
+| Claude Code | ⭐⭐⭐⭐ | 다중 에이전트 개발 워크플로우 |
+| MCP (Model Context Protocol) | ⭐⭐⭐ | Notion/Gmail 자동화 |
+
+## Tooling
+| Tech | Level | Context |
+|---|---|---|
+| Git / GitHub | ⭐⭐⭐⭐ | |
+| VSCode | ⭐⭐⭐⭐ | 메인 에디터 |
+| Notion API | ⭐⭐⭐ | 자동화 파이프라인 |
+
+
+---
+
+
+<!-- FILE: career/timeline.md -->
+
+---
+title: Career Timeline
+updated: 2026-04-19
+---
+
+# Career Timeline
+
+> 이 페이지는 이동희가 채워 넣을 템플릿입니다. 각 엔트리는 간결하게, 기술 임팩트 중심으로 기록합니다.
+
+## 2026
+
+### 2026 Q1~Q2 (진행 중)
+- **XREAL Two of Us** — IEEE VR 2026 XR Gallery 전시 준비
+- **AI 증강 개발 워크플로우** — Planner/Generator/Evaluator 3-agent 파이프라인 구축
+
+## 2025
+<!-- TODO: 2025년 주요 마일스톤 -->
+
+## 이전
+<!-- TODO: 이전 경력 -->
+
+## 수상 / 발표 / 전시
+<!-- 형식 예시
+- 2026.XX — [행사명] [제목] (역할)
+-->
+
+## 엔트리 작성 가이드
+
+각 엔트리는 다음 요소를 포함합니다:
+1. **무엇을** 했는가 (1줄)
+2. **왜** 했는가 / 문제 정의 (1~2줄)
+3. **어떻게** 해결했는가 — 기술 선택 포함 (2~3줄)
+4. **결과/학습** (1~2줄)
+
+LLM이 읽었을 때 "이 사람이 이 기술로 어떤 문제를 풀어왔는지"가 바로 보여야 합니다.
+
+
+---
+
+
+<!-- FILE: projects/pbv-webgl.md -->
+
+---
+title: PBV WebGL Platform
+status: active
+role: Developer
+stack: [Unity, UI Toolkit, WebGL]
+---
+
+# PBV WebGL Platform
+
+## 개요
+Unity UI Toolkit 기반 WebGL 전기차(PBV, Purpose Built Vehicle) 설계 플랫폼.
+
+## 핵심 특징
+- **브라우저 기반** — 별도 설치 없이 웹에서 전기차 커스터마이징
+- **UI Toolkit 기반 디자인 시스템** — USS/UXML로 구성된 재사용 가능한 컴포넌트
+- **Pretendard / NotoSansKR** 폰트 기반 한국어 UI
+
+## 기술적 특이사항
+- WebGL 환경에서의 UI Toolkit 제약 사항을 고려한 패턴
+- Spacer 기반 간격 관리 시스템
+- 커스텀 uGUI 드롭다운(DOTween 애니메이션, 9-Slice 스프라이트, WebGL 안전 입력 처리)
+
+## 연관 스킬
+- `unity-ui-toolkit-design` (개인 Claude Code 스킬)
+
+
+---
+
+
+<!-- FILE: projects/xreal-two-of-us.md -->
+
+---
+title: XREAL Two of Us
+status: active
+period: 2025~
+role: Lead Developer (solo technical implementation)
+stack: [Unity 6, Photon Fusion 2, Vivox, GPT, Clova STT, Meta Quest]
+team:
+  - 이동희 (Development)
+  - 서진 조 (Planning)
+  - 다현 고 (Design)
+milestones:
+  - IEEE VR 2026 XR Gallery 전시 준비
+---
+
+# XREAL Two of Us
+
+## 개요
+Meta Quest standalone 플랫폼용 비대칭 협동(asymmetric co-op) 퍼즐 어드벤처 VR 게임.
+
+## 핵심 특징
+- **비대칭 협동 역할 디자인** — 두 플레이어가 서로 다른 정보/능력을 가지고 퍼즐을 함께 풉니다.
+- **음성 기반 상호작용** — GPT + Clova STT 통합으로 자연어 상호작용을, Vivox로 플레이어 간 음성 채팅을 지원.
+- **Photon Fusion 2 기반 멀티플레이** — 저지연 동기화와 Quest standalone 성능 양립.
+
+## 기술 도전
+- Quest 3 기준 draw call 최적화 및 렌더링 파이프라인 튜닝
+- 비대칭 시점 간 상태 동기화 설계
+- 음성 파이프라인 지연 최소화
+
+## 역할
+기술 구현 전반을 리드. 기획은 서진 조, 디자인은 다현 고와 협업.
+
+## 배포/전시 타깃
+- IEEE VR 2026 XR Gallery
+- 검토 중: 가상융합서비스 개발자 경진대회, AIXR XR Awards, NYX Game Awards
+
+<!-- 내부 개발 기록·실패 로그는 비공개 위키에만 기록 -->
+
+
+---
+
+
+<!-- FILE: knowledge/claude-code-workflow.md -->
+
+---
+title: Claude Code Workflow
+tags: [claude-code, ai-workflow, automation]
+updated: 2026-04-19
+maturity: draft
+---
+
+# Claude Code를 활용한 개발 워크플로우
+
+> 이동희가 XREAL 프로젝트에서 실제로 운용 중인 AI 증강 개발 구조.
+
+## 3-Agent 파이프라인
+
+- **Planner** — 요구사항을 받고 작업을 분해. 전체 설계 먼저.
+- **Generator** — Planner의 계획에 따라 코드 생성.
+- **Evaluator** — Generator의 결과를 점검. Unity/C# 컨벤션, 성능, 게임 로직 일관성 관점에서 피드백.
+
+각 역할은 `.claude/agents/`에 프롬프트로 분리되어 있고, 필요 시 슬래시 커맨드로 특정 에이전트만 호출 가능.
+
+## CLAUDE.md 계층
+
+- **Register (최상위 요약)** — 프로젝트 비전, 핵심 규칙. 짧게.
+- **Cache (자주 쓰는 컨벤션)** — 파일명 규칙, 네이밍, 아키텍처 원칙.
+- **RAM (상세 스펙)** — 필요할 때 참조할 세부 문서로 링크.
+- **Disk (전체 코드베이스)** — RAG 또는 직접 탐색.
+
+## 팀 지원
+
+- **Discord 봇** — 비개발자 팀원(기획/디자인)이 "XX 씬 상태 어때?" 같은 질문을 자연어로 할 수 있게 함. 봇이 코드베이스를 쿼리하고 답변.
+
+## 하지 말 것
+
+- 매 세션마다 전체 코드베이스를 컨텍스트에 넣기 → 토큰 낭비.
+- 모든 지식을 CLAUDE.md에 몰아넣기 → 계층 붕괴.
+- Evaluator 없는 생성 → 실수 누적.
+
+<!-- 실패 기록과 구체적 프롬프트 내용은 비공개 위키 -->
+
+
+---
+
+
+<!-- FILE: knowledge/photon-fusion2-patterns.md -->
+
+---
+title: Photon Fusion 2 Patterns for Asymmetric VR Co-op
+tags: [photon-fusion2, multiplayer, vr, asymmetric]
+updated: 2026-04-19
+maturity: draft
+---
+
+# 비대칭 협동 VR 멀티플레이 패턴 (Photon Fusion 2)
+
+> XREAL Two of Us에서 사용하는 구현 패턴. 아직 초안.
+
+## 비대칭 협동의 핵심 과제
+- 두 플레이어가 서로 다른 정보를 봄 — 어디까지 동기화하고 어디까지 분리할지 결정
+- 한쪽의 입력이 다른 쪽 세계에 영향을 미침 — 권한(authority) 설계
+
+## 적용 중인 원칙
+- **State Authority 명확 분리** — 각 퍼즐 요소별로 권한 주체 고정
+- **이벤트 RPC 최소화** — NetworkedProperty 기반 상태 동기화 우선
+- **시점 전용 로컬 상태** — 상대에게 보이면 안 되는 정보는 서버에 올리지 않음
+
+## 상세 패턴
+
+TODO: 
+- Tick 기반 퍼즐 동기화 예제
+- 예측/롤백이 VR에서 주는 영향
+- 연결 끊김 복구 UX
+
+<!-- 실전 코드는 공개 가능 여부 확인 후 업데이트 -->
+
+
+---
+
+
+<!-- FILE: knowledge/unity-webgl-ui-toolkit.md -->
+
+---
+title: Unity WebGL + UI Toolkit Patterns
+tags: [unity, webgl, ui-toolkit, pbv]
+updated: 2026-04-19
+maturity: draft
+---
+
+# Unity WebGL 환경의 UI Toolkit 활용 패턴
+
+> PBV 프로젝트에서 정립한 실전 패턴. 자세한 구현 예시는 아직 정리 중.
+
+## 기본 원칙
+- **Spacer 기반 간격 관리** — margin 대신 명시적 Spacer 엘리먼트. WebGL 환경의 렌더링 일관성을 위해.
+- **Pretendard / NotoSansKR** 고정 — 한국어 UI 품질 확보.
+- **WebGL 안전 입력 처리** — 브라우저 이벤트 루프와 Unity 입력 시스템의 경계에서 발생하는 이슈 회피.
+
+## 커스텀 uGUI 드롭다운 (별도)
+UI Toolkit이 아닌 uGUI 쪽에서 필요했던 커스텀 드롭다운은:
+- DOTween으로 애니메이션
+- 9-Slice 스프라이트로 반응형
+- 브라우저 포커스 전환 시의 입력 누락 방지 패턴
+
+## 상세 구현
+
+TODO: 실제 USS/UXML 예제, 디자인 토큰 구조, 주요 컴포넌트 목록.
+
+<!-- 자세한 코드는 공개해도 될지 판단 후 업데이트 -->
+
+
+---
+
+
+<!-- FILE: knowledge/vr-performance-quest.md -->
+
+---
+title: VR Performance on Meta Quest
+tags: [vr, quest, performance, unity]
+updated: 2026-04-19
+maturity: draft
+---
+
+# Meta Quest 성능 최적화 노트
+
+> XREAL 프로젝트 기준 실전 노하우. Quest 3 타깃.
+
+## 핵심 관심사
+- **Draw call 감축** — standalone VR의 절대 제약
+- **Fill rate vs. Geometry** — Quest 3 SoC 특성 고려
+- **Rendering path 선택** — Forward / Mobile 기준
+
+## 크로스 플랫폼 리서치
+- Quest 3 vs. Samsung Galaxy XR 렌더링 특성 비교 (진행 중)
+
+## 상세 패턴
+
+TODO:
+- GPU Instancing 활용 기준
+- SRP Batcher 호환 셰이더 규칙
+- URP 경량화 설정
+- 씬 로딩/해제 시 메모리 관리
+
+<!-- 구체적 수치와 프로파일링 결과는 비공개 -->
+
+
+---
