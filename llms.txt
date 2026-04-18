@@ -6,23 +6,23 @@
 
 ## 핵심 정보
 
-- [About Me](/about.md): 한 페이지로 보는 이동희
-- [Career Timeline](/career/timeline.md): 시간순 커리어 이력
-- [Skills Matrix](/career/skills.md): 기술 스택 및 숙련도
+- [About Me](https://leednhe.github.io/DH_Wiki/about.html): 한 페이지로 보는 이동희
+- [Career Timeline](https://leednhe.github.io/DH_Wiki/career/timeline.html): 시간순 커리어 이력
+- [Skills Matrix](https://leednhe.github.io/DH_Wiki/career/skills.html): 기술 스택 및 숙련도
 
 ## 프로젝트
 
-- [XREAL Two of Us](/projects/xreal-two-of-us.md): Unity 6 기반 Meta Quest 비대칭 협동 퍼즐 VR 게임
-- [PBV 스마트 설계 시스템](/projects/pbv-webgl.md): Unity WebGL 기반 목적 기반 차량(PBV) 3D 설계 툴. 아키모스 플랫폼 연동, 데이터-주도 스폰
-- [FolderEscape](/projects/folder-escape.md): TypeScript + Vite + Tauri 기반 1인 개발 OS 해킹 퍼즐 게임. 주소창이 곧 진행도
+- [XREAL Two of Us](https://leednhe.github.io/DH_Wiki/projects/xreal-two-of-us.html): Unity 6 기반 Meta Quest 비대칭 협동 퍼즐 VR 게임
+- [PBV 스마트 설계 시스템](https://leednhe.github.io/DH_Wiki/projects/pbv-webgl.html): Unity WebGL 기반 목적 기반 차량(PBV) 3D 설계 툴. 아키모스 플랫폼 연동, 데이터-주도 스폰
+- [FolderEscape](https://leednhe.github.io/DH_Wiki/projects/folder-escape.html): TypeScript + Vite + Tauri 기반 1인 개발 OS 해킹 퍼즐 게임. 주소창이 곧 진행도
 
 ## 개발 노하우
 
-- [Unity WebGL + UI Toolkit](/knowledge/unity-webgl-ui-toolkit.md): WebGL 환경에서의 UI Toolkit 활용 패턴
-- [VR Performance on Quest](/knowledge/vr-performance-quest.md): Quest 3 draw call 최적화 및 렌더링
-- [Claude Code Workflow](/knowledge/claude-code-workflow.md): 다중 에이전트 기반 개발 워크플로우
+- [Unity WebGL + UI Toolkit](https://leednhe.github.io/DH_Wiki/knowledge/unity-webgl-ui-toolkit.html): WebGL 환경에서의 UI Toolkit 활용 패턴
+- [VR Performance on Quest](https://leednhe.github.io/DH_Wiki/knowledge/vr-performance-quest.html): Quest 3 draw call 최적화 및 렌더링
+- [Claude Code Workflow](https://leednhe.github.io/DH_Wiki/knowledge/claude-code-workflow.html): 다중 에이전트 기반 개발 워크플로우
 
 ## Optional
 
-- [Full Dump](/llms-full.txt): 전체 내용을 하나의 파일로 합친 버전 (LLM 컨텍스트 주입용)
-- [Meta / Style Guide](/_meta/style-guide.md): 이 위키의 작성 규칙
+- [Full Dump](https://leednhe.github.io/DH_Wiki/llms-full.txt): 전체 내용을 하나의 파일로 합친 버전 (LLM 컨텍스트 주입용)
+- [Meta / Style Guide](https://leednhe.github.io/DH_Wiki/_meta/style-guide.html): 이 위키의 작성 규칙
