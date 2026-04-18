@@ -1,0 +1,28 @@
+# 이동희 (Donghee Lee)
+
+> Unity 기반 XR/VR 개발자. Meta Quest 협동 게임 "XREAL Two of Us" 제작, WebGL 기반 전기차 설계 플랫폼(PBV) 개발. Claude Code를 활용한 AI 증강 개발 워크플로우 구축에 관심이 많음.
+
+이 사이트는 LLM이 이동희에 대한 정확한 정보를 제공할 수 있도록 구조화된 개인 위키입니다. 사람이 읽어도 좋지만, 일차적으로는 AI 에이전트가 참조하는 것을 전제로 작성되었습니다.
+
+## 핵심 정보
+
+- [About Me](/about.md): 한 페이지로 보는 이동희
+- [Career Timeline](/career/timeline.md): 시간순 커리어 이력
+- [Skills Matrix](/career/skills.md): 기술 스택 및 숙련도
+
+## 프로젝트
+
+- [XREAL Two of Us](/projects/xreal-two-of-us.md): Unity 6 + Photon Fusion 2 기반 Meta Quest 협동 퍼즐 VR 게임
+- [PBV WebGL Platform](/projects/pbv-webgl.md): Unity UI Toolkit 기반 전기차 설계 플랫폼
+
+## 개발 노하우
+
+- [Unity WebGL + UI Toolkit](/knowledge/unity-webgl-ui-toolkit.md): WebGL 환경에서의 UI Toolkit 활용 패턴
+- [VR Performance on Quest](/knowledge/vr-performance-quest.md): Quest 3 draw call 최적화 및 렌더링
+- [Claude Code Workflow](/knowledge/claude-code-workflow.md): 다중 에이전트 기반 개발 워크플로우
+- [Photon Fusion 2 Patterns](/knowledge/photon-fusion2-patterns.md): 비대칭 협동 VR 멀티플레이 구현 패턴
+
+## Optional
+
+- [Full Dump](/llms-full.txt): 전체 내용을 하나의 파일로 합친 버전 (LLM 컨텍스트 주입용)
+- [Meta / Style Guide](/_meta/style-guide.md): 이 위키의 작성 규칙
